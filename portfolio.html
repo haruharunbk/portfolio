@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8"/>
+		<title>나보경 포트폴리오</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum=1, user-scalable=no"/>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+		<script src="https://kit.fontawesome.com/d6d334003a.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/portfolio.css" />
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script defer src="js/progressbar.js"></script>
+		<script defer src="js/main.js"></script>
+		<script defer src="js/swiper2.js"></script>
+	</head>
+	<body>
+		<!-- 햄버거 버튼 -->
+		<a href="#none" class="hamburger_btn">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<!-- 반응형 메뉴 -->
+		<div class="overlay">
+			<nav class="menu">
+				<ul>
+					<li><a href="#main1">HOME</a></li>
+					<li><a href="#main2">ABOUT ME</a></li>
+					<li><a href="#main3">SKILLS</a></li>
+					<li><a href="#main4">PORTFOLIO</a></li>
+					<li><a href="#main5">CONTACT</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="wrap">
+			<!-- header -->
+			<header id="header">
+				<h1 class="blind">나보경 포토폴리오</h1>
+				<div class="header_logo">
+					<h2>
+						<a href="#" onclick="window.location.reload()" style="cursor: pointer;">
+							BOKYUNG 
+							<span>'s Portfolio</span>
+						</a>
+					</h2>
+				</div>
+				<nav id="gnb">
+					<h2 class="blind">네비게이션 영역</h2>
+					<ul>
+						<li class="on">
+							<a href="#main1" title="home">HOME</a>
+						</li>
+						<li>
+							<a href="#main2" title="about me">ABOUT ME</a>
+						</li>
+						<li>
+							<a href="#main3" title="skills">SKILLS</a>
+						</li>
+						<li>
+							<a href="#main4" title="portfolio">PORTFOLIO</a>
+						</li>
+						<li>
+							<a href="#main5" title="contact">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<!-- //header -->
+			<hr />
+			<!-- main -->
+			<main id="content">
+				<section id="main1" class="main1">
+					<h2 class="blind">home</h2>
+					<div class="videoWarp">
+						<video width="100%" height="969px" autoplay muted loop>
+							<source src="img/howto_bg.mp4" type="video/mp4">
+							<img src="img/howto_bg.jpg" alt="이미지링크" />
+							<!-- [if lte IE8]> <p>브라우저 버전이 낮다</p> <![endif]-->
+						</video>
+					</div>
+					<div id="main_txt">
+						안녕하세요!
+						<div class="flip">
+							<div><div>열정가득한</div></div>
+							<div><div>성실한</div></div>
+							<div><div>웹퍼블리셔/프론트엔드</div></div>
+						</div>
+						나보경입니다.
+					</div>
+					<div id="scroll" class="scroll_bar">
+						<a href="#main2">
+							<span></span>
+							Scroll
+						</a>
+					</div>
+				</section>
+				<section id="main2" class="main2">
+					<h3><span></span>ABOUT ME</h3>
+					<P class="tit">신입 웹 퍼블리셔 & 프론트엔드 개발자 나보경 입니다.</P>
+					<div class="about_content clear">
+						<div class="profile">
+							<div class="profile_photo">
+								<img src="img/이력서사진.jpg" alt="프로필 사진" />
+							</div>
+						</div>
+						<div class="about clear">
+							<div class="about1">
+								<dl>
+									<dt>Information</dt>
+									<dd><span>NAME : </span>나보경 ( Na Bo Kyung )</dd>
+									<dd><span>AGES : </span>1992.03.26</dd>
+									<dd><span>ADDRESS : </span>경기도 성남시 분당구</dd>
+									<dd><span>EMAIL : </span>haruharu____@naver.com</dd>
+									<dd><span>PHONE : </span>010-6722-0326</dd>
+								</dl>
+							</div>
+							<div class="about2">
+								<dl>
+									<dt>Education/License</dt>
+									<dd><d>2021.11.30 ~ 2022.05.10</d></dd>
+									<dd class="padding"><span>웹콘텐츠 UI/UX 디자인 &amp; 프론트엔드 (React.js)</span></dd>
+									<dd><d>2019.07.15 ~ 2019.12.05</d></dd>
+									<dd class="padding"><span>디지털컨버전스-웹퍼블리셔/프론트엔드 취업과정</span></dd>
+									<dd class="padding"><span>웹디자인기능사(필기) 합격</span></dd>
+								</dl>
+							</div>
+							<div class="about3">
+								<dl>
+									<dt>Career</dt>
+									<dd><d>2020.08 ~ 2021.06</d></dd>
+									<dd><span>소상공인연합회</span></dd>
+									<dd class="padding">자사 홈페이지 관리 및 매니저 업무</dd>
+									<dd><d>2016.01 ~ 2019.05</d></dd>
+									<dd><span>(주) 엘피아이</span></dd>
+									<dd class="padding">간단한 사이트 관리 및 상품등록</dd>
+								</dl>
+							</div>
+							<div class="about4">
+								<dl>
+									<dt>Personality Type</dt>
+									<dd class="padding"><span>열정적인 중재자 INFP</span></dd>
+									<dd>세심하고 디테일하다.</dd>
+									<dd>친화적이고 조화를 잘 이루려는 경향이 있다.</dd>
+									<dd>일을 신속하고 비약적으로 끝내며 변화와 다양성이 남들보다 뛰어나다.</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="main3" class="main3">
+					<h3><span></span>SKILLS</h3>
+					<ul class="skills">
+						<li id="html">
+							<p></p>
+							<span>
+								DOCTYPE을 이해하고 문서에 맞춰 작업이 가능하며, <br />
+								웹 표준을 준수하여 효율적인 코드를 설계합니다.
+							</span>
+							<p>
+								DOCTYPE을 이해하고 문서에 맞춰 작업이 가능하며,
+								웹 표준을 준수하여 효율적인 코드를 설계합니다.
+							</p>
+							<div class="progress">
+								<div class="progress_bar html"></div>85%
+							</div>
+						</li>
+						<li class="css">
+							<p></p>
+							<span>
+								미디어쿼리를 활용하여 <br />반응형 레이아웃을
+								이해하고 구현할 수 있습니다.
+							</span>
+							<p>
+								미디어쿼리를 활용하여 반응형 레이아웃을 <br />
+								이해하고 <br />구현할 수 있습니다.
+							</p>
+							<div class="progress">
+								<div class="progress_bar css">80%</div>
+							</div>
+						</li>
+						<li class="js">
+							<p></p>
+							<span>
+								다양한 메소드를 사용해 <br />기능을 구현하며,
+								유용한  <br />플러그인을 적용합니다.
+							</span>
+							<p>
+								다양한 메소드를 사용해 기능을 구현하며, <br />
+								유용한 플러그인을 적용합니다.
+							</p>
+							<div class="progress">
+								<div class="progress_bar js">65%</div>
+							</div>
+						</li>
+						<li class="jQuery">
+							<p></p>
+							<span>
+								구현하고자 하는 기능을  <br />대부분 제작 가능하고,
+								대상 · 이벤트 · 이벤트 핸들러의 기능을 구현 가능합니다.
+							</span>
+							<p>
+								구현하고자 하는 기능을 대부분 제작 가능하고, <br />
+								대상 · 이벤트 · 이벤트 핸들러의 기능을 구현 가능합니다.
+							</p>
+							<div class="progress">
+								<div class="progress_bar jQuery">70%</div>
+							</div>
+						</li>
+						<li class="react">
+							<p></p>
+							<span>
+								SPA을 위한 사용자 인터페이스를 구축하는데 React를 사용하며 UX를 더욱 향상시킬 수 있습니다.
+							</span>
+							<p>
+								SPA을 위한 사용자 인터페이스를 구축하는데 React를 사용하며 UX를 더욱 향상시킬 수 있습니다.
+							</p>
+							<div class="progress">
+								<div class="progress_bar react">60%</div>
+							</div>
+						</li>
+						<li class="sass">
+							<p></p>
+							<span>
+								Sass를 사용하여 변수를 지정하여 반복작업을 줄일 수 있고, 보다 깔끔한 코드를 작성할 수 있습니다.
+							</span>
+							<p>
+								Sass를 사용하여 변수를 지정하여 반복작업을 줄일 수 있고, 보다 깔끔한 코드를 작성할 수 있습니다.
+							</p>
+							<div class="progress">
+								<div class="progress_bar sass">80%</div>
+							</div>
+						</li>
+						<li class="ps">
+							<p></p>
+							<span>
+								사진편집, 펜툴활용, <br />패턴제작, 이미지 보정 
+								등이 <br />가능합니다.
+							</span>
+							<p>
+								사진편집, 펜툴활용, 패턴제작, 이미지 보정 <br />
+								등이 가능합니다.
+							</p>
+							<div class="progress">
+								<div class="progress_bar ps">65%</div>
+							</div>
+						</li>
+						<li class="ai">
+							<p></p>
+							<span>
+								배너 제작, 로고 디자인, <br />툴을 이용한 
+								디자인 일러스트 작성 등이 가능합니다.
+							</span>
+							<p>
+								배너 제작, 로고 디자인, 툴을 이용한 <br />
+								디자인 일러스트 작성 등이 가능합니다.
+							</p>
+							<div class="progress">
+								<div class="progress_bar ai">60%</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section id="main4" class="main4">
+					<h3><span></span>PORTFOLIO</h3>
+					<div class="page_wrap">
+						<div id="home-slider">
+							<div class="swiper-container swiper-container-vertical">
+								<div class="swiper-wrapper">
+									<!-- 첫번째 슬라이드 -->
+									<div class="swiper-slide swiper-slide-one">
+										<div class="swiper-image">
+											<div class="swiper-image-inner swiper-image-left swiper-image-one">
+												<img src="img/mockup/mockup-imac-w.png" alt class="mockup1" />
+												<img src="img/mockup/mockup-ipad.png" alt class="mockup2" />
+												<img src="img/mockup/mockup-iphone.png" alt class="mockup3" />
+												<div class="mockup_t1"><img src="img/cjone/cjone_pc.jpg" alt class="cjone_pc" width="100%" /></div>
+												<div class="mockup_t2"><img src="img/cjone/cjone_tablet.jpg" alt class="cjone_tablet" width="100%" /></div>
+												<div class="mockup_t3"><img src="img/cjone/cjone_mobile.jpg" alt class="cjone_mobile" width="100%" /></div>
+												<a href="https://haruharunbk.github.io/cjone" target="_blank" title="새창으로 이동합니다">
+													<img src="img/go.png" alt="CJ ONE 홈페이지 바로가기" />
+												</a>
+											</div>
+										</div>
+										<div class="swiper-image">
+											<div class="swiper-image-inner swiper-image-right swiper-image-two">
+												<a class="paragraph mockup_title" id="size_down" target="_blank">
+													CJ ONE
+												</a>
+												<a class="paragraph mockup_small_title" target="_blank">
+													CJ ONE 홈페이지
+												</a>
+												<p id="contt1" class="contt paragraph  mockup_small_title">
+													자세히보기
+												</p>
+											</div>
+										</div>
+										<div class="p_cont_r p_cont_r1">
+											<div class="xBtn">
+												<a hreftitle="닫기">
+													<span></span>
+													<span></span>
+												</a>
+											</div>
+											<ul>
+												<li><span>About Project</span>CJ ONE 홈페이지</li>
+												<li><span>Language</span>HTML, CSS, JQuery or javascript</li>
+												<li><span>Effect</span>Animation, Transition</li>
+												<li class="m_size">반응형웹으로 제작한 웹사이트입니다. <br/> 미디어쿼리를 이용하여 PC, 태블릿, 모바일에서 자동으로 해상도와 레이아웃이 변경됩니다</li>
+												<li class="p_view"><a href="https://haruharunbk.github.io/cjone" target="_blank" alt="CJ ONE 홈페이지 바로가기" title="새창으로 이동합니다">CJ ONE 사이트로 이동</a></li>
+											</ul>
+										</div>
+									</div>
+									<!-- //첫번째 슬라이드 -->
+									<!-- 두번째 슬라이드 -->
+									<div class="swiper-slide swiper-slide-three">
+										<div class="swiper-image">
+											<div class="swiper-image-inner swiper-image-left swiper-image-three">
+												<img src="img/mockup/mockup-imac.png" alt class="mockup1" />
+												<img src="img/mockup/mockup-pro.png" alt class="mockup2" />
+												<img src="img/mockup/mockup-pro.png" alt class="mockup3" />
+												<div class="mockup_t1"><img src="img/samsungsem/samsung_all.jpg" alt class="samsung_all1" width="100%" /></div>
+												<div class="mockup_t2"><img src="img/samsungsem/samsung_sub1.jpg" alt class="samsung_all2" width="100%" /></div>
+												<div class="mockup_t3"><img src="img/samsungsem/samsung_sub2.jpg" alt class="samsung_all3" width="100%" /></div>
+												<a href="https://haruharunbk.github.io/samsungsem" target="_blank" title="새창으로 이동합니다">
+													<img src="img/go.png" alt="삼성전기 바로가기" />
+												</a>
+											</div>
+										</div>
+										<div class="swiper-image">
+											<div class="swiper-image-inner swiper-image-right swiper-image-four">
+												<a class="paragraph mockup_title" id="size_down" target="_blank">
+													SAMSUNGSEM
+												</a>
+												<a class="paragraph mockup_small_title" target="_blank">
+													삼성전기 홈페이지
+												</a>
+												<p id="contt2" class="contt paragraph  mockup_small_title">
+													자세히보기
+												</p>
+											</div>
+										</div>
+										<div class="p_cont_r p_cont_r2">
+											<div class="xBtn">
+												<a hreftitle="닫기">
+													<span></span>
+													<span></span>
+												</a>
+											</div>
+											<ul>
+												<li><span>About Project</span>삼성전기 홈페이지</li>
+												<li><span>Language</span>HTML, CSS, JavaScript</li>
+												<li><span>Effect</span>Animation, Transition</li>
+												<li class="m_size"><span>page</span>3page(메인페이지, 문의하기 페이지, 채용공고 페이지)</li>
+												<li class="m_size">웹 콘텐츠 접근성 지침과 웹 표준을 준수하여 삼성전기 웹 페이지를 제작하였습니다.<br/> 메인 페이지와 서브페이지 2개로 구성되어 있으며, 크로스 브라우징 및 유효성 검사를 통과하였습니다.</li>
+												<li class="p_view two">
+													<a href="sub_samsungsem.html" target="_blank" alt="웹 접근성 검사 페이지 바로가기" title="새창으로 이동합니다">웹 접근성 검사</a>
+													<a href="https://haruharunbk.github.io/samsungsem" target="_blank" alt="삼성전기 홈페이지 바로가기" title="새창으로 이동합니다">삼성전기로 이동</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- //두번째 슬라이드 -->
+									<!-- 세번째 슬라이드 -->
+									<div class="swiper-slide swiper-slide-five">
+										<div class="swiper-image">
+											<div class="swiper-image-inner swiper-image-left swiper-image-five">
+												<img src="img/mockup/mockup-imac-w.png" alt class="mockup1" />
+												<img src="img/mockup/mockup-ipad.png" alt class="mockup2" />
+												<img src="img/mockup/mockup-iphone.png" alt class="mockup3" />
+												<div class="mockup_t1"><img src="img/thetastable/thetastable_all.jpg" alt class="thetastable_all1" width="100%" /></div>
+												<div class="mockup_t2"><img src="img/thetastable/thetastable_tablet.png" alt class="thetastable_all2" width="100%" /></div>
+												<div class="mockup_t3"><img src="img/thetastable/thetastable_mobile.png" alt class="thetastable_all3" width="100%" /></div>
+												<a href="https://haruharunbk.github.io/thetastable/" target="_blank" title="새창으로 이동합니다">
+													<img src="img/go.png" alt="더테이스터블 바로가기" />
+												</a>
+											</div>
+										</div>
+										<div class="swiper-image">
+											<div class="swiper-image-inner swiper-image-right swiper-image-six">
+												<a class="paragraph mockup_title" id="size_down" target="_blank">
+													THETASTABLE
+												</a>
+												<a class="paragraph mockup_small_title" target="_blank">
+													더테이스터블 홈페이지
+												</a>
+												<p id="contt3" class="contt paragraph  mockup_small_title">
+													자세히보기
+												</p>
+											</div>
+										</div>
+										<div class="p_cont_r p_cont_r3">
+											<div class="xBtn">
+												<a hreftitle="닫기">
+													<span></span>
+													<span></span>
+												</a>
+											</div>
+											<ul>
+												<li><span>About Project</span>더테이스터블 홈페이지</li>
+												<li><span>Language</span>HTML, CSS, JQuery</li>
+												<li><span>Effect</span>Animation, Transition</li>
+												<li class="m_size"><span>page</span>3page(메인페이지, 문의하기 페이지, 채용공고 페이지)</li>
+												<li class="m_size">반응형웹으로 제작한 웹사이트 입니다.<br/>
+													미디어쿼리를 이용하여 PC, 태블릿, 모바일에서 자동으로 해상도와 레이아웃이 변경됩니다.
+												</li>
+												<li class="p_view two">
+													<a href="sub_thetastable.html" target="_blank" alt="웹 접근성 검사 페이지 바로가기" title="새창으로 이동합니다">웹 접근성 검사</a>
+													<a href="https://haruharunbk.github.io/thetastable/" target="_blank" alt="더테이스터블 홈페이지 바로가기" title="새창으로 이동합니다">더테이스터블 사이트로 이동</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- //세번째 슬라이드 -->
+									<!-- 네번째 슬라이드 -->
+									<div class="swiper-slide swiper-slide-seven">
+										<div class="swiper-image">
+											<div class="swiper-image-inner swiper-image-left swiper-image-seven">
+												<a href="https://haruharunbk.github.io/landing_homecent/" target="_blank" title="새창으로 이동합니다">
+													<img src="img/go.png" alt="HOMECENT 앱랜딩 페이지 바로가기" />
+												</a>
+											</div>
+										</div>
+										<div class="swiper-image">
+											<div class="swiper-image-inner swiper-image-right swiper-image-eight">
+												<a class="paragraph mockup_title" id="size_down" target="_blank">
+													HOMECENT APP CODING
+												</a>
+												<a class="paragraph mockup_small_title" target="_blank">
+													HOMECENT 앱코딩
+												</a>
+												<p id="contt4" class="contt paragraph  mockup_small_title">
+													자세히보기
+												</p>
+											</div>
+										</div>
+										<div class="p_cont_r p_cont_r4">
+											<div class="xBtn">
+												<a hreftitle="닫기">
+													<span></span>
+													<span></span>
+												</a>
+											</div>
+											<ul>
+												<li><span>About Project</span>HOMECENT 앱코딩</li>
+												<li><span>Language</span>Adobe XD, Photoshop, HTML, CSS, Jquery</li>
+												<li><span>Effect</span>Animation, Transition, SVG</li>
+												<li class="m_size">가전제품 중고거래 모바일 웹을 기획하고 UI/UX Design, UI 개발. <br/>모바일 웹 제작의 전반적인 업무를 경험하기 위한 프로젝트.</li>
+												<li class="p_view two">
+													<a href="https://haruharunbk.github.io/landing_homecent/" target="_blank" alt="홈센트 랜딩페이지 바로가기" title="새창으로 이동합니다">Landing Page</a>
+													<a href="https://haruharunbk.github.io/landing_homecent/" target="_blank" alt="홈센트 앱 바로가기" title="새창으로 이동합니다">HOMECENT APP</a>
+												</li>
+											
+											</ul>
+										</div>
+									</div>
+									<!-- //네번째 슬라이드 -->
+									<!-- 다섯번째 슬라이드 -->
+									<div class="swiper-slide swiper-slide-nine">
+										<div class="swiper-image">
+											<div class="swiper-image-inner swiper-image-left swiper-image-nine">
+												<img src="img/mockup/mockup-iphone.png" alt class="mockup3" />
+												<div class="mockup_t3">
+													<video controls autoplay muted loop>
+														<source src="img/kakao.mp4" type="video/mp4" />
+													</video>
+												</div>
+												<a class="kakao_app1" href="#" target="_blank" title="새창으로 이동합니다">
+													<img src="img/go.png" alt="REACT 카카오톡 페이지 바로가기" />
+												</a>
+											</div>
+										</div>
+										<div class="swiper-image">
+											<div class="swiper-image-inner swiper-image-right swiper-image-ten">
+												<a class="paragraph mockup_title" id="size_down" target="_blank">
+													KAKAO TALK
+												</a>
+												<a class="paragraph mockup_small_title" target="_blank">
+													REACT 카카오톡 페이지
+												</a>
+												<p id="contt5" class="contt paragraph  mockup_small_title">
+													상세보기
+												</p>
+											</div>
+										</div>
+										<div class="p_cont_r p_cont_r5">
+											<div class="xBtn">
+												<a hreftitle="닫기">
+													<span></span>
+													<span></span>
+												</a>
+											</div>
+											<ul>
+												<li><span>About Project</span>REACT 카카오톡 페이지</li>
+												<li><span>Language</span>HTML, CSS, JavaScript, react.js</li>
+												<li><span>Effect</span>Flex box, git, github, Ajax, Hook, Axios, Router, SPA</li>
+												<li class="m_size">
+													KaKaoTalk을 React와 SCSS를 사용하여 프론트엔드 기술이 접목된 작업을 했습니다.<br/>
+													협업을 할때 필요한 github에 배포를 진행했습니다.
+												</li>
+												<li class="p_view">
+													<a class="kakao_app2" href="#" target="_blank" alt="REACT 카카오톡 페이지 홈페이지 바로가기" title="새창으로 이동합니다">REACT 카카오톡으로 이동</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- //다섯번째 슬라이드 -->
+									<!-- 다섯번째 슬라이드 -->
+									<div class="swiper-slide swiper-image-eleven">
+										<div class="swiper-image">
+											<div class="swiper-image-inner swiper-image-left swiper-image-eleven">
+												<div class="doll">
+													<div class="cssbox">
+														<h2>CSS BOX</h2>
+													</div>
+													<div class="dollbox">
+														<ul>
+															<li>
+																<div class="emoji emoji_haha">
+																	<div class="emoji_face">
+																		<div class="emoji_eyes"></div>
+																		<div class="emoji_mouth">
+																			<div class="emoji_tongue"></div>
+																		</div>
+																	</div>
+																</div>
+															</li>
+															<li></li>
+															<li>
+																<div class="emoji emoji_wow">
+																	<div class="emoji_face">
+																		<div class="emoji_eyebrows"></div>
+																		<div class="emoji_eyes"></div>
+																		<div class="emoji_tongue"></div>
+																	</div>
+																</div>
+															</li>
+															<li></li>
+															<li></li>
+															<li class="ryan_btn">
+																<div class="emoji emoji_ryan">
+																	<div class="ryan_move">
+																		<img src="img/ryan.png" alt="라이언 얼굴" />
+																	</div>
+																</div>
+															</li>
+															<li>
+																<div class="emoji emoji_yay">
+																	<div class="emoji_face">
+																		<div class="emoji_eyebrows"></div>
+																		<div class="emoji_mouth"></div>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<div class="emoji emoji_sad">
+																	<div class="emoji_face">
+																		<div class="emoji_eyebrows"></div>
+																		<div class="emoji_eyes"></div>
+																		<div class="emoji_tongue"></div>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<div class="emoji emoji_angry">
+																	<div class="emoji_face">
+																		<div class="emoji_eyebrows"></div>
+																		<div class="emoji_eyes"></div>
+																		<div class="emoji_tongue"></div>
+																	</div>
+																</div>
+															</li>
+															<li></li>
+															<li></li>
+															<li></li>
+														</ul>
+														<div class="crane">
+															<div class="rail"></div>
+															<div class="crane_body">
+																<div class="rail_line"></div>
+																<div class="rail_center"></div>
+																<div class="left_leg"></div>
+																<div class="left_leg_line"></div>
+																<div class="right_leg"></div>
+																<div class="right_leg_line"></div>
+															</div>
+														</div>
+													</div>
+													<div class="joystick">
+														<a href="#none" class="prev_btn">←</a>
+														<a href="#none" class="next_btn">→</a>
+														<div class="stick"></div>
+														<div class="stick_bottom"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-image">
+											<div class="swiper-image-inner swiper-image-right swiper-image-twelve">
+												<a class="paragraph mockup_title" id="size_down" target="_blank">
+													PURE CSS
+												</a>
+												<a class="paragraph mockup_small_title" target="_blank">
+													Pure Css Animation
+												</a>
+												<p id="contt5" class="contt paragraph  mockup_small_title">
+													상세보기
+												</p>
+											</div>
+										</div>
+										<div class="p_cont_r p_cont_r5">
+											<div class="xBtn">
+												<a hreftitle="닫기">
+													<span></span>
+													<span></span>
+												</a>
+											</div>
+											<ul>
+												<li><span>About Project</span>Pure Css Animation 페이지</li>
+												<li><span>Language</span>HTML, CSS3</li>
+												<li><span>Effect</span>Animation, Transition</li>
+												<li class="m_size">
+													CSS만을 사용하여 라이언 형상과 페이스북 이모티콘을 제작하였습니다.
+												</li>
+												<li class="p_view">
+													<a href="sub_purecss.html" target="_blank" alt="Pure Css Animation 페이지 바로가기" title="새창으로 이동합니다">CSS Animation 페이지로 이동</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- //다섯번째 슬라이드 -->
+								</div>
+								<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+									<div class="swiper-pagination-bullet"></div>
+									<div class="swiper-pagination-bullet"></div>
+									<div class="swiper-pagination-bullet"></div>
+									<div class="swiper-pagination-bullet"></div>
+									<div class="swiper-pagination-bullet"></div>
+									<div class="swiper-pagination-bullet"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="main5" class="main5">
+					<h3><span></span>CONTACT</h3>
+					<div class="inner">
+						<div class="contact">
+							<div class="kyung"></div>
+							<ul class="contact_info">
+								<li><span></span>저의 포트폴리오를 봐주셔서 감사합니다.</li>
+								<li><span></span>010 . 6722 . 0326</li>
+								<li><span></span>haruharu____@naver.com</li>
+								<li><span></span>KAKAO ID : s_ham0326</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</main>
+			<!-- //main -->
+			<hr />
+			<!-- footer -->
+			<footer id="footer">
+				<div class="footer_inner">
+					<address>
+						본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다. <br />
+						© 2022 Na, Bo-Kyung. All Rights Reserved.
+					</address>
+					<div class="aside">TOP</div>
+				</div>
+			</footer>
+			<!-- //footer -->
+		</div>
+		<!-- swiper 프로젝트 페이지 컨텐츠 변환 코드 -->
+		<script src="js/swiper.jquery.js"></script>
+		<script src="js/swiper1.js"></script>
+	</body>
+</html>

@@ -1,0 +1,96 @@
+/*  thetastable sub  */
+@import url(reset.css);
+@import url(font.css);
+
+/*  common  */
+body{font-size: 20px; font-family:'NanumBarunGothic';color: #000; }
+a{color: #000;text-decoration: none;}
+
+/*  layout  */
+body{background:#fab88fd9;}
+	#container{display: flex; position: fixed; width: 300vw; height: 100vh; box-sizing: border-box;}
+	#container > div{flex: 1; width: 100vw; height: 100vh;box-sizing: border-box;}
+
+body.on{position: fixed;left: 0;top: 0;}
+
+
+/*  cat  */
+.cat{position: fixed;bottom: 20px; left: 40%; z-index: 20; width: 260px; height: 420px; background: url("../img/cat_right.png") no-repeat 0 0;}
+.cat.on{animation: walk 0.5s steps(4,end) infinite;}
+.cat.left{background: url("../img/cat_left.png") no-repeat 0 0;}
+
+@keyframes walk {
+	0%{background-position: 0 0;}
+	100%{background-position: -1040px 0;}
+}
+
+/*  container  */
+#container > div > section{position: relative;width: 100%; height: 100%;}
+#container > div > section > div{position: absolute; top: 0;}
+
+#container > div.content1{background:#fab88fd9 url("../img/line.png") no-repeat 0 0;}
+.content1 > section{top: 0;left: 0;box-sizing: border-box;}
+.content1 > section > div{position: absolute;top: 0;}
+
+.bg{width: 944px; height: 100%;}
+.txt_box{width: 415px; margin: 230px 0 0 135px; padding:50px 100px ; background-color: #fff;}
+.txt_box > h3{position: relative;margin-bottom: 60px; font-size: 2.25em;font-weight: bold;}
+.txt_box > p{position: relative;font-size: 1em;line-height: 2rem;}
+.txt_box > p > span{display: inline-block;position: relative;}
+.txt_box > p > span:before{content: ""; display: block; position: absolute; bottom: 0; width: 100%; height: 50%; background:#fb5d00; opacity: 0.3;}
+
+.content1 div:nth-of-type(2){position: absolute; right: 0; width: 976px; height: 100%;}
+.content1 div:nth-of-type(2) > div > img{position: absolute; top:15px; right:300px; transform: rotate(-5deg);}
+.content1 div:nth-of-type(2) > div > div{top: 565px; right: 310px;}
+#container > div .passed{position: absolute; width:135px; height: 136px; background: url("../img/passed.png") no-repeat 0 0;}
+
+
+svg{position: absolute; top: 720px; right:20px; width: 200px;}
+.content3 svg{position: absolute; top: 720px; width: 200px; transform: rotateY(180deg);}
+.st0{fill:#fab88fd9; stroke:#fab88fd9; stroke-width:20; stroke-miterlimit:10; animation: svg_ani 6s linear infinite;}
+
+@keyframes svg_ani{
+	0%{stroke: #fab88fd9;}
+	10%{stroke: #fff;}
+	20%{stroke: #fab88fd9;}
+	30%{stroke: #fff;}
+	40%{stroke: #fab88fd9;}
+	50%{stroke: #fff;}
+	60%{stroke: #fab88fd9;}
+	70%{stroke: #fff;}
+	80%{stroke: #fab88fd9;}
+	90%{stroke: #fff;}
+	100%{stroke: #fab88fd9;}
+}
+
+#container > div.content2{background:#fab88fd9 url("../img/line.png") no-repeat 0 0;}
+.content2 > section > div{display: flex; width: 100%;height: 100%;} 
+.content2 > section > div > div{position: absolute;}
+.content2 > section > div > div:nth-of-type(1){top:15px; left:430px;}
+.content2 > section > div > div:nth-of-type(1) > div{right: 55px; bottom: 40px;}
+.content2 > section > div > div:nth-of-type(2){right:140px; top:0px;}
+.content2 > section > div > div:nth-of-type(2) > div{right: 30px;bottom: 60px;}
+
+#container > div.content3{background:#fab88fd9 url("../img/line.png") no-repeat 0 0;}
+.content3 > section{text-align: center;}
+.content3 > section > h2{font-size: 2.25em; font-weight: bold; padding-top: 50px;}
+.content3 > section > p{font-size: 1.25em; margin-top: 50px;}
+.content3 > section > .browser_img{position: absolute; width: 100%; top: 0; margin-top: 250px;}
+.content3 > section > .browser_img > span{position: absolute; display: block; width: 600px;}
+.content3 > section > .browser_img > span:nth-child(1){z-index:4; left: 50%; top: 50%; margin-left: -450px; margin-top: 100px;}
+.content3 > section > .browser_img > span:nth-child(2){z-index:3; left: 50%; top: 50%; margin-left: -350px; margin-top: 60px;}
+.content3 > section > .browser_img > span:nth-child(3){z-index:2; left: 50%; top: 50%; margin-left: -250px; margin-top:20px;}
+.content3 > section > .browser_img > span:nth-child(4){z-index:1; left: 50%; top: 50%; margin-left: -150px; margin-top:-20px;}
+
+.content3 > section > .browser{position: absolute; left: 50%; top: inherit !important;; bottom: 80px; transform:translateX(-50%); z-index: 10; display: flex; flex-direction: row;}
+.content3 > section > .browser > span{display: inline-block; width: 100px; height: 100px; background: url("../img/crossbrowser/chrome_logo.png") no-repeat 0 0; background-size: contain; margin-right: 150px;}
+.content3 > section > .browser > span:last-child{margin-right: 0;}
+
+.content3 > section > .browser > span.chrome{background-image: url("../img/crossbrowser/chrome_logo.png"); animation: bounce 0.5s linear 0s infinite alternate;}
+.content3 > section > .browser > span.edge{background-image: url("../img/crossbrowser/edge_logo.png"); animation: bounce 0.5s linear 0.3s infinite alternate;}
+.content3 > section > .browser > span.firefox{background-image: url("../img/crossbrowser/firefox_logo.png"); animation: bounce 0.5s linear 0.6s infinite alternate;}
+.content3 > section > .browser > span.opera{background-image: url("../img/crossbrowser/opera_logo.png"); animation: bounce 0.5s linear 0.9s infinite alternate;}
+@keyframes bounce {
+	0%{transform: translateY(0);}
+	100%{transform: translateY(-20px);}
+}
