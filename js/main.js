@@ -3,6 +3,10 @@
 let devWidth;
 const limitsize = 1024;
 
+//윈도우가 시작하면 화면 맨위로 이동
+window.onbeforeunload = function () {
+	window.scrollTo(0, 0);
+}; 
 window.addEventListener("load", () => {
 	devWidth = document.querySelector("body").offsetWidth;
 	console.log(devWidth);
@@ -27,15 +31,7 @@ window.addEventListener("load", () => {
 	const content = document.querySelector("#content > section");
     const contHeight = content.offsetHeight;
     const contents = document.querySelectorAll("#content > section");
-    const contLenght = contents.length;
     let scrollPosition = document.documentElement.scrollTop || 0; 
-	
-	// const contentMain = document.querySelector("#content");
-	const main1 = document.querySelector(".main1");
-	const main2 = document.querySelector(".main2");
-	const main3 = document.querySelector(".main3");
-	const main4 = document.querySelector(".main4");
-	const main5 = document.querySelector(".main5");
 	
 	window.addEventListener("scroll", () => {
 		let scrollTop = document.querySelector("html").scrollTop;
@@ -53,50 +49,9 @@ window.addEventListener("load", () => {
 
 		scrollPosition = positionY;
 		console.log(direction);
-
-		//	const contentChilds = document.querySelectorAll("#content > section");
-		//	const contentChild0 = contentChilds[0]; //main1
-		//	const contentChild1 = contentChilds[1]; //main2
-		//	const contentChild2 = contentChilds[2]; //main3
-		//	const contentChild3 = contentChilds[3]; //main4
-		//	const contentChild4 = contentChilds[4]; //main5
-
-		//	const navLis = document.querySelectorAll("#gnb ul li");
-		//	const navLi = document.querySelector("#gnb ul li");
-		//	console.log(navLis[4])
-		//	if(scrollTop >= contentChild4.offsetTop -50){
-		//		navLi.classList.remove('on');
-		//		navLis[4].classList.add("on");
-		//	}else if(scrollTop >= contentChild3.offsetTop -100 && scrollTop < contentChild4.offsetTop){
-		//		navLi.classList.remove('on');
-		//		navLis[3].classList.add("on");
-		//	}else if(scrollTop >= contentChild2.offsetTop -100 && scrollTop < contentChild3.offsetTop){
-		//		navLi.classList.remove('on');
-		//		navLis[2].classList.add("on");
-		//	}else if(scrollTop >= contentChild1.offsetTop -100 && scrollTop < contentChild2.offsetTop){
-		//		navLi.classList.remove('on');
-		//		navLis[1].classList.add("on");
-		//	}else{
-		//		navLi.classList.remove('on');
-		//		navLis[0].classList.add("on");
-		//	}
-
-
-
-		// $(window).scroll(function(){
-			//	if(nowScroll >= $("#content").children("section").eq(4).offset().top-50){
-		//			$("#gnb ul li").removeClass("on").eq(4).addClass("on")
-		//	}else if(nowScroll >= $("#content").children("section").eq(3).offset().top-100 && nowScroll < $("#content").children("section").eq(4).offset().top){
-		//			$("#gnb ul li").removeClass("on").eq(3).addClass("on")
-		//	}else if(nowScroll >= $("#content").children("section").eq(2).offset().top-100 && nowScroll < $("#content").children("section").eq(3).offset().top){
-		//			$("#gnb ul li").removeClass("on").eq(2).addClass("on")
-		//	}else if(nowScroll >= $("#content").children("section").eq(1).offset().top-100 && nowScroll < $("#content").children("section").eq(2).offset().top){
-		//			$("#gnb ul li").removeClass("on").eq(1).addClass("on")
-		//	}else{
-		//			$("#gnb ul li").removeClass("on").eq(0).addClass("on")
-		//	}
 	});
 
+	// main2에 있는 scroll icon
 	const scrollLink = document.querySelector("#scroll a");
 	scrollLink.addEventListener("click", function (e) {
 		e.preventDefault();
@@ -112,7 +67,9 @@ window.addEventListener("load", () => {
 
 
 $(document).ready(function(){
-	$("html,body").stop().animate({"scrollTop":0},1000,"swing");
+	//윈도우가 시작하면 화면 맨위로 이동 -> javascript로 
+	//	$("html,body").stop().animate({"scrollTop":0},1000,"swing");
+	
 	$(window).scroll(function(){
 		var nowScroll = $(document).scrollTop();
 		console.log( nowScroll );
@@ -137,6 +94,17 @@ $(document).ready(function(){
 		$("html, body").stop().animate({
 			scrollTop : $("#content").children("section").eq(lis).offset().top
 		}, 1000)
+	});
+
+	// 한페이지씩 이동
+	$("#content > section").mousewheel(function(event,delta){
+		if(delta > 0){ // 마우스 휠을 올렸을 때
+			var prev = $(this).prev().offset().top;
+			$("html,body").stop().animate({"scrollTop":prev},1400,"linear"); //easeOutBounce
+		}else if(delta < 0){ //마우스 휠을 내렸을때
+			var next = $(this).next().offset().top;
+			$("html,body").stop().animate({"scrollTop":next},1400,"linear"); 
+		}
 	});
 
 	// progressbar
